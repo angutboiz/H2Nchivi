@@ -366,6 +366,15 @@ main .huongdan p {
     text-align: justify;
 }
 
+.login-form {
+    height: 100vh;
+    color: #fff;
+}
+
+.login .username {
+    width: 100%;
+}
+
 footer .img-footer {
     width: 30%;
 }
