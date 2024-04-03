@@ -6,33 +6,69 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6d6d6d;
+}
+b {
+    font-weight: bold;
+}
+i {
+    font-style: italic;
+}
+
 a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
 }
 
+th,
+td {
+    border: 1px solid #81c684;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .p-25 {
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 22%;
+    padding-right: 22%;
 }
 
-.container {
-    padding-left: 400px;
-    padding-right: 400px;
-    margin: 0;
+.active {
+    color: #82c885;
+    font-weight: bold;
 }
-
 .bg-dark {
     background-color: #000 !important;
 }
 
 .bg-primary {
-    background-color: #82c885;
+    background-color: #82c885 !important;
+}
+
+.bg-secon {
+    background-color: #f0c715 !important;
+}
+
+.bg-third {
+    background-color: #f1f3f4;
 }
 
 .text-primary {
     color: #82c885 !important;
+    font-weight: bold;
+}
+
+.text-secon {
+    color: #f0c715 !important;
     font-weight: bold;
 }
 
@@ -46,8 +82,19 @@ a {
     font-weight: bold;
 }
 
+.btn-secon {
+    background-color: #f0c715;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-secon:hover {
+    background-color: #81c684;
+    color: #fff;
+}
+
 .btn-primary:hover {
-    background-color: #96eb99;
+    background-color: #f0c715;
 }
 
 .btn-outline-primary:hover {
@@ -61,19 +108,31 @@ a {
     font-weight: bold;
 }
 
+.top-detail {
+    background-color: #fff;
+}
+
 header {
     font-weight: bold;
-    padding: 5px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    z-index: 999;
+}
+
+main {
+    padding-top: 64px;
 }
 
 .logo-img {
-    width: 35%;
+    width: 30%;
 }
 
 .logo {
     background-image: url("./src/LOGO_có chữ.png");
     height: 100%;
-    width: 450px;
+    width: 350px;
     background-position: -25px 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,14 +151,20 @@ header ul li:hover a {
     color: #fff;
 }
 
-main {
+main .bg-title {
+    height: 500px;
 }
 
 main .banner {
     background-image: url("./src/BÌA_1.png");
-    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    height: 600px;
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 main .title {
@@ -115,11 +180,212 @@ main .title h1 {
 main .title p {
     margin-top: 17px;
     color: #fff;
-    text-shadow: 1px 1px 3px #000;
 }
 
 main .aboutus {
     height: 549px;
     background-color: #82c885;
     color: #fff;
+}
+
+main .aboutus .img-about {
+    width: 230px;
+}
+
+main .aboutus .img-about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+main .box .box-child {
+    background-color: #cde9ce;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    border-radius: 10px;
+}
+
+main .box .box-child .check {
+    width: 110px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+main .box-detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .box-detail .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #82c885;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+main .box-detail h3 {
+    font-style: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+main .title-quytrinh .arcodi {
+    background-color: #f1f3f4;
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+}
+main .title-quytrinh p {
+    padding: 10px 50px;
+}
+
+main .title-quytrinh .minus {
+    width: 20px;
+    height: 2px;
+    background-color: #82c885;
+}
+
+main .dichvu .box {
+    border: 2px solid #82c885;
+    padding: 20px;
+    position: relative;
+    margin-top: 70px;
+    width: 33%;
+    color: #000;
+}
+
+main .dichvu .box h3 {
+    margin-top: 60px;
+    text-align: center;
+    color: #ffd700;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main .dichvu .box .icon {
+    position: absolute;
+    top: -50px;
+    right: 30%;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #82c885;
+    font-size: 30px;
+}
+
+main .dichvu-detail {
+    background-color: #f3fff4;
+    padding-top: 40px;
+}
+
+main .line-yellow,
+main .line-green {
+    width: 14px;
+    height: 92px;
+    position: absolute;
+    left: 16px;
+    top: -40px;
+}
+
+.line-yellow {
+    background-color: #f0c715;
+}
+
+.line-green {
+    background-color: #81c784;
+}
+
+main .muaho {
+    padding: 20px 40px;
+}
+
+main .muaho p {
+    text-align: justify;
+}
+
+main .dichvu-detail .left p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+main .dichvu-detail .dichvumuaho .left {
+    width: 35%;
+}
+
+main .dichvu-detail .dichvumuaho .right {
+    width: 65%;
+}
+
+main .dichvu-detail .dichvukigui .left {
+    width: 65%;
+}
+
+main .dichvu-detail .dichvukigui .right {
+    width: 35%;
+}
+
+main .dichvu-detail ul li {
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom: 6px;
+}
+
+main .thanhtoanho {
+    background-color: #f3fff4;
+}
+
+main .huongdan h3:hover {
+    color: #f0c715 !important;
+    cursor: pointer;
+}
+
+main .huongdan p {
+    text-align: justify;
+}
+
+footer .img-footer {
+    width: 30%;
+}
+
+footer .img-about {
+    background-image: url("./src/LOGO_có chữ.png");
+    height: 100px;
+    width: 350px;
+    background-position: -25px 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+footer ul li i {
+    margin-right: 10px;
+}
+@media only screen and (max-width: 1300px) {
+    .p-25 {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 }

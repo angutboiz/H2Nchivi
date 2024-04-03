@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>H2Nchivi Globa</title>
+    </head>
+    <body>
+        <div class="top-detail">
+            <div class="d-flex justify-content-between align-items-center p-25 py-2 text-primary">
+                <div class="d-flex gap-4">
+                    <div class="call fw-bold">
+                        <i class="fa-solid fa-phone"></i>
+                        0971 255 838
+                    </div>
+                    <div class="mail fw-bold"><i class="fa-regular fa-envelope"></i> H2Nchivi.global@gmail.com</div>
+                    <div class="tigia fw-bold">
+                        <i class="fa-solid fa-yen-sign"></i>
+                        Tỉ giá 3350
+                    </div>
+                </div>
+                <div class="">
+                    <div class="btn btn-outline-primary">Đăng ký</div>
+                    <div class="btn btn-primary">Đăng nhập</div>
+                </div>
+            </div>
+        </div>
+        <header class="bg-dark">
+            <div class="p-25 d-flex justify-content-between">
+                <div class="logo-img overflow-hidden">
+                    <div class="logo"></div>
+                </div>
+                <ul class="d-flex align-items-center gap-1">
+                    <li><a href="/index.html">Trang chủ</a></li>
+                    <li><a href="./dichvu.html">Dịch vụ</a></li>
+                    <li><a class="active" href="./bieuphi.html">Biểu phí</a></li>
+                    <li><a href="./chinhsach.html">Chính sách</a></li>
+                    <li><a href="./huongdan.html">Hướng dẫn</a></li>
+                    <li><a href="./tintuc.html">Tin tức</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="">
+            <div class="banner"></div>
+            <div class="p-25 bg-title">
+                <div class="title w-50">
+                    <h1 class="fs-1">
+                        H2Nchivi Global <br />
+                        DỊCH VỤ ĐẶT HÀNG <br />TỐT NHẤT CHO BẠN
+                    </h1>
+                    <p class="fs-5">Cung cấp dịch vụ đặt hàng và vận chuyển tốt nhất Việt Nam với thời gian giao hàng nhanh nhất, đội ngũ trách nhiệm nhất, chi phí hợp lý nhất.</p>
+                    <div class="mt-3">
+                        <div class="btn btn-dark">Tiếng Việt</div>
+                        <div class="btn btn-dark">Chinese</div>
+                    </div>
+                </div>
+            </div>
+            <div class="p-25 mt-5 bg-white py-5">
+                <div class="">
+                    <h3 class="fs-3 text-primary">1. Tổng chi phí cho một đơn hàng Trung Quốc</h3>
+                    <p>Chi phí đơn hàng = Giá vốn + Phí dịch vụ + Phí vận chuyển</p>
+                    <p>Trong đó:</p>
+                    <b>Giá vốn = Giá sản phẩm + Phí vận chuyển nội địa Trung Quốc (nếu có) </b>
+                    <b>Phí dịch vụ = Phí dịch vụ + Phí kiểm đếm (tuỳ chọn) + Phí đóng kiện gỗ (tuỳ chọn) + Phí đóng chống sốc (tùy chọn) </b>
+                    <b>Phí vận chuyển = Phí vận chuyển Trung Quốc – Việt Nam + Phí vận chuyển phát sinh (nếu có) + Phí giao hàng tận nhà (tuỳ chọn) </b>
+                    <p class="mt-3">Dưới đây là những khoản phí cố định và khoản phí tùy chọn sử dụng tùy thuộc vào nhu cầu của khách hàng:</p>
+                </div>
+                <div class="bieuphi mt-3">
+                    <table class="table">
+                        <thead class="thead-dark bg-primary text-white fw-bold">
+                            <tr>
+                                <th scope="col">Chi phí</th>
+                                <th scope="col"></th>
+                                <th scope="col">Định nghĩa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="4">Phí cố định</th>
+                                <td>Giá sản phẩm</td>
+                                <td>Là giá thành sản phẩm được công khai niêm yết trên các trang như taobao, 1688 và tmall</td>
+                            </tr>
+                            <tr>
+                                <td>Phí dịch vụ</td>
+                                <td>Là chi phí mua hàng cần trả cho đơn vị trung gian tại Việt nam</td>
+                            </tr>
+                            <tr>
+                                <td>Phí ship nội địa Trung Quốc</td>
+                                <td>Là phí vận chuyển từ shop đến kho Trung Quốc của HNchivi Global (tuỳ điều kiện từng shop)</td>
+                            </tr>
+                            <tr>
+                                <td>Phí vận chuyển về Việt nam</td>
+                                <td>Là phí vận chuyển từ kho Trung Quốc về kho Việt nam</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="5">Phí tuỳ chọn</th>
+                                <td>Phí kiểm đếm</td>
+                                <td>Là phí kiểm đếm tại kho Trung Quốc để đảm bảo số lượng, mẫu mã cho khách hàng</td>
+                            </tr>
+                            <tr>
+                                <td>Phí giao hàng tận nhà</td>
+                                <td>Là phí giao hàng từ kho của H2Nchivi Global đến địa chỉ khách yêu cầu</td>
+                            </tr>
+                            <tr>
+                                <td>Phí đóng kiện gỗ</td>
+                                <td>Đóng gỗ xung quanh hàng hoá để tránh rủi ro hàng hoá bị biến dạng khi vận chuyển</td>
+                            </tr>
+                            <tr>
+                                <td>Phí đóng chống sốc</td>
+                                <td>Phí đảm bảo an toàn cho kiện hàng dễ vợ, không bị biến dạng</td>
+                            </tr>
+                            <tr>
+                                <td>Phí vận chuyển phát sinh</td>
+                                <td>Phí nâng, hạ hàng với các kiện hàng lớn</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-3">
+                    <div class="">
+                        <h3 class="fs-3 text-primary">2. Bảng giá đặt hàng Trung Quốc về Việt Nam tại H2Nchivi Global</h3>
+                        <p>Mỗi loại chi phí chi trả khi mua hàng Trung Quốc sẽ được tính theo công thức cụ thể.</p>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.1. Giá sản phẩm</h3>
+                        <p>Đây là chi phí cố định mà khách hàng bắt buộc phải trả cho Người bán ở Trung Quốc.</p>
+                        <b>Giá sản phẩm = Đơn vị giá trên website Trung Quốc * Tỷ giá tiền nhân dân tệ tại thời điểm đặt đơn hàng.</b>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.2. Phí dịch vụ mua hàng</h3>
+                        <p>
+                            Được tính theo tỷ lệ tiền hàng. Giá trị tiền hàng (giá sản phẩm) càng lớn thì phần trăm phí dịch vụ càng nhỏ. Thông thường khoản phí này không quá lớn và khách hàng thân
+                            thiết, đã sử dụng dịch vụ nhiều lần sẽ được ưu đãi nhiều hơn.
+                        </p>
+                        <b>Phí dịch vụ mua hàng = Tiền hàng * % phí dịch vụ</b>
+                        <table class="table mt-2">
+                            <thead class="thead-dark bg-primary text-white fw-bold">
+                                <tr>
+                                    <th scope="col">Giá trị đơn hàng</th>
+                                    <th scope="col">Phí dịch vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lớn hơn hoặc bằng 5.000.000đ</td>
+                                    <td>2%</td>
+                                </tr>
+                                <tr>
+                                    <td>Lớn hơn hoặc bằng 30.000.000đ</td>
+                                    <td>1.5%</td>
+                                </tr>
+                                <tr>
+                                    <td>Lớn hơn hoặc bằng 50.000.000đ</td>
+                                    <td>0.8%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.3. Phí vận chuyển hàng nội địa Trung Quốc</h3>
+                        <p>
+                            Phí vận chuyển nội địa là chi phí để đưa lô hàng từ nhà cung cấp (NCC) Trung Quốc đến kho của H2Nchivi Global, phí này chúng tôi đại diện thu hộ shop và thanh toán cho shop
+                            ngay khi khách hàng xác nhận.
+                        </p>
+                        <p>
+                            Phí vận chuyển nội địa có thể được miễn phí tùy theo điều kiện mua hàng của mỗi NCC (thông thường các shop trên 1688 đều mất thêm phí này, trên taobao và tmall tỷ lệ khoảng
+                            30% )
+                        </p>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.4. Phí vận chuyển hàng từ Trung Quốc về Việt Nam</h3>
+
+                        <table class="table mt-2">
+                            <thead class="thead-dark bg-primary text-white fw-bold">
+                                <tr>
+                                    <th scope="col">Trọng lượng</th>
+                                    <th scope="col">Kho Hà Nội (Order)</th>
+                                    <th scope="col">Kho Hà Nội (Ký gửi)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0 - 10kg</td>
+                                    <td>26.000đ/kg</td>
+                                    <td>30.000đ/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>10 - 50kg</td>
+                                    <td>25.000đ/kg</td>
+                                    <td>28.000đ/kg</td>
+                                </tr>
+                                <tr>
+                                    <td>50 - 100kg</td>
+                                    <td>Liên hệ</td>
+                                    <td>Liên hệ</td>
+                                </tr>
+                                <tr>
+                                    <td>Trên 100kg</td>
+                                    <td>Liên hệ</td>
+                                    <td>Liên hệ</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng tính khối</td>
+                                    <td>2.800.000đ</td>
+                                    <td>3.500.000đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.5. Phí kiểm đếm</h3>
+                        <p>
+                            Nếu sử dụng dịch vụ này, H2Nchivi Global sẽ tiến hành kiểm, đếm hàng hóa để xác nhận số lượng và kiểm tra lỗi trên hàng hóa. Nếu xảy ra vấn đề, H2Nchivi Global sẽ thực hiện
+                            khiếu nại lên NCC ngay tại kho để tiết kiệm thời gian và chi phí.
+                        </p>
+                        <table class="table mt-2">
+                            <thead class="thead-dark bg-primary text-white fw-bold">
+                                <tr>
+                                    <th scope="col">Số lượng sản phẩm/đơn</th>
+                                    <th scope="col">Mức thu/sản phẩm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1 - 2 sản phẩm</td>
+                                    <td>5.000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>3 - 10 sản phẩm</td>
+                                    <td>2.500đ</td>
+                                </tr>
+                                <tr>
+                                    <td>11 - 100 sản phẩm</td>
+                                    <td>2.000đ</td>
+                                </tr>
+                                <tr>
+                                    <td>101 - 500 sản phẩm</td>
+                                    <td>1.500đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Trên 500 sản phẩm</td>
+                                    <td>1.000đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.6. Phí đóng kiện gỗ</h3>
+                        <p>
+                            Khi đặt các mặt hàng dễ vỡ hoặc có khả năng hư hỏng do va đập như laptop, đồ thủy tinh, đồ điện tử,… thì khách hàng nên sử dụng dịch vụ đóng kiện gỗ để đảm bảo an toàn cho
+                            hàng hóa. Nếu khách hàng thực sự không có nhu cầu sử dụng dịch vụ đóng gỗ, H2Nchivi Global sẽ không chịu trách nhiệm khi hàng hóa bị hỏng hóc, biến dạng trên đường vận
+                            chuyển.
+                        </p>
+                        <p class="mt-2">
+                            Với dịch vụ đóng gỗ, khách hàng được lựa chọn ngay khi tạo đơn hàng, và trước khi H2Nchivi Global đặt hàng với NCC. Tất cả các yêu cầu đóng gỗ chỉ được thực hiện khi hàng
+                            hóa chưa xuất đi khỏi kho tại Trung Quốc. Vì vậy, khi thay đổi yêu cầu, quý khách hàng hãy liên hệ trực tiếp với nhân viên tư vấn để kịp thời giải quyết.
+                        </p>
+                        <table class="table mt-2">
+                            <thead class="thead-dark bg-primary text-white fw-bold">
+                                <tr>
+                                    <th scope="col">Khối đầu tiên</th>
+                                    <th scope="col">Khối tiếp theo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>350 tệ/khối đầu</td>
+                                    <td>300 tệ/khối</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="my-3">
+                        <h3 class="fs-5 text-secon">2.7. Bảng giá hàng lô ( hàng thông thường )</h3>
+
+                        <table class="table mt-2">
+                            <thead class="thead-dark bg-primary text-white fw-bold">
+                                <tr>
+                                    <th scope="col">Trọng lượng hàng hoá</th>
+                                    <th scope="col">VNĐ</th>
+                                    <th scope="col">M3</th>
+                                    <th scope="col">Yêu cầu</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hàng siêu nặng</td>
+                                    <td>7.000đ</td>
+                                    <td></td>
+                                    <td>1000kg/m3 - 2000kg/m3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng nặng</td>
+                                    <td>8.000đ</td>
+                                    <td></td>
+                                    <td>450kg/m3 - 990kg/m3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng thường</td>
+                                    <td>11.000đ</td>
+                                    <td>2.800.000đ</td>
+                                    <td>250kg/m3 - 450kg/m3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng quần áo, giày dép không hãng/hoá chất</td>
+                                    <td>14.000đ</td>
+                                    <td>3.200.000đ</td>
+                                    <td>250kg/m3</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng mỹ phẩm/điện tử/thực phẩm</td>
+                                    <td>16.000đ</td>
+                                    <td>3.200.000đ</td>
+                                    <td>Trên 50kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Hàng taobao, quần áo, hàng tạp, fake</td>
+                                    <td>19.000đ</td>
+                                    <td>3.400.000đ</td>
+                                    <td>Trên 50kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Mã lẻ - đóng bao không đạt 30kg</td>
+                                    <td>22.000đ</td>
+                                    <td>3.500.000đ</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="title-quytrinh mb-3">
+                        <div class="arcodi d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold fs-4 text-primary">Chính sách giải quyết khiếu nại – bồi thường với hàng ký gửi</h3>
+                            <div class="minus"></div>
+                        </div>
+                        <div class="bg-third mb-3">
+                            <p>
+                                Do chúng tôi không trực tiếp giao dịch với nhà cung cấp của Quý khách, cũng không cung cấp dịch vụ kiểm hàng cho các đơn hàng ký gửi. Hàng hóa của Quý khách được Nhà
+                                cung cấp vận chuyển đến, chúng tôi chỉ nhận hàng theo số kiện Quý khách đã kê khai. Vì vậy chúng tôi sẽ không chịu trách nhiệm đối với tình trạng hư hỏng hàng hóa, tính
+                                chính xác của hàng hóa trước khi đến với kho của chúng tôi.
+                            </p>
+                            <p>
+                                Nếu quý khách dùng dịch vụ bảo hiểm hàng hóa, trường hợp xảy ra mất hàng hóa được xác định do phía H2Nchivi Global hoặc do các yếu tố khách quan khác, Chúng tôi sẽ bồi
+                                thường 50% giá trị hàng hóa mà các bạn kê khai. Phí bảo hiểm hàng hóa là 5% trên tổng giá trị đơn hàng.
+                            </p>
+                            <p>
+                                Ví dụ: Đơn hàng của quý khách là 10.000.000đ. Nếu quý khách mua thêm phí bảo hiểm hàng hóa 5% (tức là 500.000đ), nếu xảy ra tình trạng thất lạc mất hàng hóa, hàng hóa
+                                hỏng, thì chúng tôi sẽ đền bù 5.000.000đ. Nếu quý khách không dùng dịch vụ bảo hiểm hàng hóa, trường hợp xảy ra mất hàng hóa, thất lạc hàng hóa H2Nchivi Global hoặc các
+                                yếu tố khách quan khác, chúng tôi sẽ bồi thường cho Quý khách gấp 5 lần số tiền vận chuyển của đơn hàng đó.
+                            </p>
+                            <p>
+                                Lưu ý: H2Nchivi Global có quyền xác minh lại chính xác giá trị đơn hàng khi xảy ra tranh chấp. Nếu giá trị hàng hóa mà quý khách kê khai cao hơn giá trị thực tế,
+                                H2Nchivi Global sẽ không chấp nhận đền bù thiệt hại.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="title-quytrinh mb-3">
+                        <div class="arcodi d-flex justify-content-between mb-3">
+                            <h3 class="fw-bold fs-4 text-primary">Chính sách khiếu nại hàng Order</h3>
+                            <div class="minus"></div>
+                        </div>
+                        <div class="bg-third mb-3">
+                            <p><b>Thời gian khiếu nại: </b>Trong vòng 3 ngày tính từ ngày quý khách nhận được kiện hàng.</p>
+                            <p>
+                                <b>Trường hợp hàng sai: </b> <br />Do Nhà cung cấp: Trường hợp hàng sai do phía nhà cung cấp giao sai sản phẩm, … Chúng tôi sẽ hỗ trợ tối đa trong việc giao dịch và đàm
+                                phán lại với đối tác, đảm bảo tối ưu quyền lợi cho khách hàng khi tham gia giao dịch. Trong trường hợp khách hàng nhận hàng không đúng với đơn hàng đã dặt hàng mà
+                                nguyên nhân được xác định là do lỗi dịch vụ của H2Nchivi Global, chúng tôi sẽ thực hiện việc nhận lại hàng hoá và hoàn trả lại tiền hàng cho khách hàng.
+                            </p>
+                            <p>
+                                <b>Chất lượng sản phẩm: </b>Chúng tôi chỉ là đơn vị trung gian giữa nhà cung cấp và khách hàng nên chúng tôi không chịu trách nhiệm về chất lượng của sản phẩm. Nhưng
+                                chúng tôi sẽ hỗ trợ tối đa trong việc khiếu nại với nhà cung cấp trong trường hợp hàng hóa có vấn đề về chất lượng, tư vấn lựa chọn nhà cung cấp.
+                            </p>
+                            <p>
+                                <b>Giải quyết vấn đề hàng hoá: </b> <br />Đối với hàng hóa vỡ, hỏng, trầy xước do quá trình vận chuyển. Chúng tôi sẽ căn cứ vào mức độ và đưa ra phương án giải quyết
+                                một cách thỏa đáng nhất. Xử lý khiếu nại: Chúng tôi sẽ tiếp nhận xử lý khiếu nại khi có đầy đủ hình ảnh (sản phẩm, giao dịch, vỏ kiện hàng, mã vận đơn dán trên từng
+                                kiện hàng) và các thông tin liên quan khác.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark text-white py-4">
+            <div class="p-25 my-5 d-flex justify-content-between">
+                <div class="img-footer">
+                    <div class="img-about"></div>
+                    <p>
+                        H2Nchivi Global chuyên cung cấp cho khách hàng các giải pháp tìm kiếm sản phẩm và nhập hàng trực tiếp từ các trang thương mại điện tử hàng đầu như Taobao, 1688, Tmall...với mức
+                        chi phí rẻ nhất, thời gian nhanh nhất, làm việc trách nhiệm nhất.
+                    </p>
+                </div>
+                <div class="">
+                    <div class="border-bottom mb-3">
+                        <h3 class="fs-5 pb-3">Liên hệ</h3>
+                    </div>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <li><i class="fa-solid fa-house"></i>Hà Nội, Việt Nam</li>
+                        <li><i class="fa-solid fa-phone"></i>0971 255 838</li>
+                        <li><i class="fa-regular fa-envelope"></i>H2Nchivi.global@gmail.com</li>
+                        <li><i class="fa-solid fa-globe"></i>http://www.h2nchiviglobal.com</li>
+                    </ul>
+                </div>
+                <div class="">
+                    <div class="border-bottom mb-3">
+                        <h3 class="fs-5 pb-3">Chăm sóc khách hàng</h3>
+                    </div>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <li><a href="#">Về chúng tôi</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Hướng dẫn</a></li>
+                        <li><a href="#">Biểu phí dịch vụ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-25 text-center border-top pt-4">
+                <h3>© 2023. Designed by H2Nchivi Global</h3>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
