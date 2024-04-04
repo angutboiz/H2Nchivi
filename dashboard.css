@@ -12,6 +12,7 @@ body {
 
 .sidebar .left {
     background-color: #f3fff4;
+    width: 20%;
 }
 
 .sidebar .left ul {
@@ -45,6 +46,15 @@ body {
 
 .content-right {
     color: #9fa8bc;
+    width: 80%;
+}
+
+nav .nav-tabs button.active {
+    color: #fff !important;
+}
+
+nav .nav-tabs button {
+    color: #000 !important;
 }
 
 nav button {
