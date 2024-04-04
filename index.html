@@ -13,6 +13,8 @@
         />
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <title>H2Nchivi Globa</title>
     </head>
     <body>
@@ -37,9 +39,9 @@
         </div>
         <header class="bg-dark">
             <div class="p-25 d-flex justify-content-between">
-                <div class="logo-img overflow-hidden">
+                <a href="./index.html" class="logo-img overflow-hidden">
                     <div class="logo"></div>
-                </div>
+                </a>
                 <ul class="d-flex align-items-center gap-1">
                     <li><a class="active" href="./index.html">Trang chủ</a></li>
                     <li><a href="./dichvu.html">Dịch vụ</a></li>
@@ -49,37 +51,39 @@
                     <li><a href="./huongdan.html">Hướng dẫn</a></li>
                     <li><a href="./tintuc.html">Tin tức</a></li>
                     <li>
-                        <a href="./dashboard.html"><i class="fa-solid fa-user"></i></i></a>
+                        <a href="./dashboard.html"><i class="fa-solid fa-user"></i></a>
                     </li>
                 </ul>
             </div>
         </header>
         <main class="">
-            <div class="banner"></div>
+            <div class="banner animate__animated animate__pulse"></div>
             <div class="p-25 bg-title">
                 <div class="title w-50">
-                    <h1 class="fs-1">
+                    <h1 class="fs-1 animate__animated animate__fadeInDownBig">
                         H2Nchivi Global <br />
                         DỊCH VỤ ĐẶT HÀNG <br />TỐT NHẤT CHO BẠN
                     </h1>
-                    <p class="fs-5">Cung cấp dịch vụ đặt hàng và vận chuyển tốt nhất Việt Nam với thời gian giao hàng nhanh nhất, đội ngũ trách nhiệm nhất, chi phí hợp lý nhất.</p>
-                    <div class="mt-3">
+                    <p class="fs-5 animate__animated animate__fadeInDown">
+                        Cung cấp dịch vụ đặt hàng và vận chuyển tốt nhất Việt Nam với thời gian giao hàng nhanh nhất, đội ngũ trách nhiệm nhất, chi phí hợp lý nhất.
+                    </p>
+                    <div class="mt-3 animate__animated animate__fadeInUp">
                         <div class="btn btn-dark">Tiếng Việt</div>
                         <div class="btn btn-dark">Chinese</div>
                     </div>
                 </div>
             </div>
             <div class="p-25 aboutus">
-                <h1 class="fs-1 pt-5">Về chúng tôi</h1>
-                <p>
+                <h1 class="fs-1 pt-5 aboutus-title animate__animated animate__bounceInUp">Về chúng tôi</h1>
+                <p class="aboutus-title animate__animated animate__bounceInUp">
                     H2Nchivi Global là đơn vị vận chuyển uy tín chuyên cung cấp dịch vụ đặt hàng online và vận chuyển hàng hóa từ các nhà máy, công xưởng, các website bán hàng của Trung Quốc về Việt
                     Nam với phí giao dịch thấp nhất và thời gian tối ưu nhất trên thị trường hiện nay.
                 </p>
                 <div class="d-flex mt-3 gap-5">
-                    <div class="img-about w-25">
+                    <div class="img-about w-25 aboutus_left-img animate__animated animate__bounceInLeft">
                         <img src="./src/BÌA_1.png" alt="" />
                     </div>
-                    <div class="w-75">
+                    <div class="w-75 aboutus_right animate__animated animate__bounceInRight">
                         <div class="social d-flex gap-3 fs-4">
                             <i class="fa-solid fa-globe"></i>
                             <i class="fa-regular fa-comments"></i>
@@ -110,21 +114,21 @@
             </div>
             <div class="p-25 my-5">
                 <div class="d-flex justify-content-between gap-3 text-center">
-                    <div class="box-detail">
+                    <div class="box-detail animate-1">
                         <div class="circle">
                             <i class="fa-solid fa-check"></i>
                         </div>
                         <h3 class="">TIẾT KIỆM</h3>
                         <p>Chúng tôi sẽ tư vấn dựa trên giá trị cốt lõi là quyền lợi của quý khách được đảm bảo khi giao dịch với các cửa hàng trên sàn thương mại điện tử.</p>
                     </div>
-                    <div class="box-detail">
+                    <div class="box-detail animate-1">
                         <div class="circle">
                             <i class="fa-regular fa-clock"></i>
                         </div>
                         <h3>NHANH CHÓNG</h3>
                         <p>Việc đặt và nhận hàng rất nhanh chóng nhờ việc tạo và quản lý đơn hàng rất dễ dàng, thuận tiện thông qua hệ thống thông minh của H2Nchivi</p>
                     </div>
-                    <div class="box-detail">
+                    <div class="box-detail animate-1">
                         <div class="circle">
                             <i class="fa-regular fa-user"></i>
                         </div>
@@ -134,17 +138,17 @@
                 </div>
             </div>
             <div class="p-25">
-                <div class="text-center my-4">
+                <div class="text-center my-4 quytrinh-1">
                     <h1 class="fs-1 text-primary">QUY TRÌNH ĐẶT HÀNG</h1>
                 </div>
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-2">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Đăng ký/Đăng nhập</h3>
                         <div class="minus"></div>
                     </div>
                     <p>Quý khách khởi tạo tài khoản để bắt đầu sử dụng dịch vụ của H2Nchivi hoặc đăng nhập nếu đã và đang sử dụng dịch vụ của chúng tôi.</p>
                 </div>
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-3">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Cài đặt công cụ đặt hàng</h3>
                         <div class="minus"></div>
@@ -154,7 +158,7 @@
                         tại chúng tôi cung cấp cho trình duyệt Chrome.
                     </p>
                 </div>
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-4">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Chọn sản phẩm</h3>
                         <div class="minus"></div>
@@ -164,7 +168,7 @@
                         thuộc tính quý khách đã chọn vào giỏ hàng của quý khách trên H2Nchivi qua công cụ đặt hàng trên.
                     </p>
                 </div>
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-5">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Đặt hàng & Đặt cọc</h3>
                         <div class="minus"></div>
@@ -176,7 +180,7 @@
                     <p></p>
                 </div>
 
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-6">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Nhận hàng & Thanh toán</h3>
                         <div class="minus"></div>
@@ -186,7 +190,7 @@
                         sẽ liên hệ với quý khách để giao hàng và thực hiện thanh toán.
                     </p>
                 </div>
-                <div class="title-quytrinh mb-3">
+                <div class="title-quytrinh mb-3 quytrinh-7">
                     <div class="arcodi d-flex justify-content-between">
                         <h3 class="fw-bold fs-5">Hỗ trợ</h3>
                         <div class="minus"></div>

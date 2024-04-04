@@ -139,7 +139,8 @@ main {
     overflow: hidden;
 }
 
-header ul li {
+header ul li a {
+    display: block;
     padding: 10px;
 }
 
@@ -402,9 +403,16 @@ footer .img-about {
 footer ul li i {
     margin-right: 10px;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1600px) {
     .p-25 {
         padding-left: 15%;
         padding-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .p-25 {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

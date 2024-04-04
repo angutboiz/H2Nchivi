@@ -13,6 +13,8 @@
         />
         <link rel="stylesheet" href="./reset.css" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <title>H2Nchivi Globa</title>
     </head>
     <body>
@@ -35,9 +37,9 @@
         </div>
         <header class="bg-dark">
             <div class="p-25 d-flex justify-content-between">
-                <div class="logo-img overflow-hidden">
+                <a href="./index.html" class="logo-img overflow-hidden">
                     <div class="logo"></div>
-                </div>
+                </a>
                 <ul class="d-flex align-items-center gap-1">
                     <li><a href="./index.html">Trang chủ</a></li>
                     <li><a class="active" href="./dichvu.html">Dịch vụ</a></li>
@@ -47,18 +49,18 @@
                     <li><a href="./huongdan.html">Hướng dẫn</a></li>
                     <li><a href="./tintuc.html">Tin tức</a></li>
                     <li>
-                        <a href="./dashboard.html"><i class="fa-solid fa-user"></i></i></a>
+                        <a href="./dashboard.html"><i class="fa-solid fa-user"></i></a>
                     </li>
                 </ul>
             </div>
         </header>
         <main class="">
             <div class="p-25 mt-5">
-                <div class="text-center my-4">
+                <div class="text-center my-4 animate__animated animate__fadeInDown">
                     <h1 class="fs-1 text-primary">DỊCH VỤ CỦA CHÚNG TÔI</h1>
                 </div>
                 <div class="dichvu d-flex gap-4">
-                    <a href="#dichvumuaho" class="box">
+                    <a href="#dichvumuaho" class="box animate__animated animate__fadeInLeftBig">
                         <div class="icon">
                             <i class="fa-regular fa-credit-card"></i>
                         </div>
@@ -68,14 +70,14 @@
                             vụ tốt nhất cho mỗi khách hàng sử dụng dịch vụ.
                         </p>
                     </a>
-                    <a href="#dichvukigui" class="box">
+                    <a href="#dichvukigui" class="box animate__animated animate__fadeInUp">
                         <div class="icon">
                             <i class="fa-regular fa-credit-card"></i>
                         </div>
                         <h3>Dịch vụ ký gửi</h3>
                         <p>Nhờ đội ngũ nhân viên giàu kinh nghiệm, năng lực vận chuyển lớn sẽ đảm bảo tốc độ và thời gian giao hàng nhanh chóng trong 2 – 3 ngày với mức phí ký gửi siêu rẻ.</p>
                     </a>
-                    <a href="#thanhtoanho" class="box">
+                    <a href="#thanhtoanho" class="box animate__animated animate__fadeInRightBig">
                         <div class="icon">
                             <i class="fa-regular fa-credit-card"></i>
                         </div>
@@ -89,7 +91,7 @@
             </div>
             <div id="dichvumuaho" class="p-25 mt-5 dichvu-detail">
                 <div class="dichvumuaho d-flex gap-5 py-4">
-                    <div class="left position-relative">
+                    <div class="left position-relative animate__animated animate__bounceInUp">
                         <div class="line-yellow"></div>
                         <div class="muaho bg-primary text-white">
                             <h3 class="fs-3 fw-bold mb-2">Dịch vụ mua hộ</h3>
@@ -103,7 +105,7 @@
                             hàng hộ cao nhất, an toàn và nhanh nhất, các bạn nên tìm cho mình công ty đặt hàng hộ uy tín, chẳng hạn như H2Nchivi Global.
                         </p>
                     </div>
-                    <div class="right">
+                    <div class="right animate__animated animate__bounceInUp">
                         <h3 class="fs-4 fw-bold">Khó khăn của khách hàng khi tự đặt hàng Trung Quốc về Việt Nam</h3>
                         <p class="my-3">
                             Các mặt hàng Trung Quốc ngày càng được yêu thích và cực phổ biến tại Việt Nam. Để nhập hàng về Việt Nam, người mua hàng hoàn toàn có thể tự đặt hàng Trung Quốc trên các
@@ -132,7 +134,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="">
+                <div class="dichvu-1">
                     <h3 class="fs-3 fw-bold">Thế mạnh của H2Nchivi Global trong lĩnh vực order hàng Trung Quốc</h3>
                     <p class="my-4">
                         Có thể nói, H2Nchivi Global là đơn vị đi đầu trong lĩnh vực order hàng Trung Quốc về Việt Nam. Với hơn 3 năm kinh nghiệm đặt hộ hàng Trung Quốc, H2Nchivi Global sở hữu những
@@ -172,7 +174,7 @@
             </div>
             <div id="dichvukigui" class="p-25 mt-5">
                 <div class="dichvukigui d-flex gap-5 mt-5">
-                    <div class="left">
+                    <div class="left dichvu-left">
                         <div class="">
                             <h3 class="fs-5 fw-bold">Các loại chi phí khi vận chuyển hàng từ Trung Quốc</h3>
                             <p>
@@ -196,7 +198,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="right position-relative">
+                    <div class="right position-relative dichvu-right">
                         <div class="line-green"></div>
                         <div class="muaho bg-secon text-white">
                             <h3 class="fs-3 fw-bold mb-2">Dịch vụ ký gửi</h3>
@@ -234,7 +236,7 @@
                         vị vận chuyển uy tín, nhiều năm kinh nghiệm như H2Nchivi Global.
                     </p>
                 </div>
-                <div class="phituychon mt-3">
+                <div class="camket mt-3">
                     <h3 class="fw-bold fs-4 mb-3">Cam kết của H2Nchivi Global</h3>
                     <p>Là một trong số ít doanh nghiệp hoạt động lâu năm trong lĩnh vực vận chuyển hàng hóa từ Trung Quốc về Việt Nam, H2Nchivi Global mang đến chủ shop những dịch vụ chất lượng.</p>
                     <ul>
@@ -259,7 +261,7 @@
             </div>
             <div id="thanhtoanho" class="p-25 mt-5 thanhtoanho">
                 <div class="d-flex gap-5 py-4 mt-5">
-                    <div class="left position-relative">
+                    <div class="left position-relative thanhtoanho-left">
                         <div class="line-yellow"></div>
                         <div class="muaho bg-primary text-white">
                             <h3 class="fs-3 fw-bold mb-2">Thanh toán hộ</h3>
@@ -274,7 +276,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="right">
+                    <div class="right thanhtoanho-right">
                         <h3 class="fs-4 fw-bold">Đổi tiền nhân dân tệ (yuan)</h3>
                         <p class="my-3">
                             Nhân dân tệ là tên gọi chính thức của đơn vị tiền tệ nước Cộng Hòa Nhân Dân Trung Hoa. Nhân dân tệ được viết tắt là CNY, theo quy ước quốc tế là RMB. Nhân dân tệ chỉ được
@@ -285,7 +287,7 @@
                     </div>
                 </div>
             </div>
-            <div class="p-25 mt-5">
+            <div class="p-25 mt-5 dichvu-2">
                 <p>
                     <b>Tiền giấy:</b>
                     Là loại tiền có mệnh giá từ 1 tệ, 2 tệ, 5 tệ, 10 tệ, 20 tệ, 50 tệ và 100 tệ.
