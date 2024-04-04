@@ -209,8 +209,7 @@ main .box .box-child {
 }
 
 main .box .box-child .check {
-    width: 110px;
-    height: 50px;
+    padding: 10px;
     background-color: #000;
     color: #fff;
     display: flex;
