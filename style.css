@@ -375,6 +375,17 @@ main .huongdan p {
     width: 100%;
 }
 
+.dashboard .logo {
+    background-image: url("./src/LOGO_có chữ.png");
+    height: 60px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30px 50%;
+
+    overflow: hidden;
+}
+
 footer .img-footer {
     width: 30%;
 }

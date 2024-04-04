@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="dashboard.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>H2Nchivi Globa</title>
+    </head>
+    <body class="dashboard">
+        <div class="d-flex align-items-center justify-content-between bg-dark text-white">
+            <div class="py-2 w-25 d-flex align-items-center justify-content-between">
+                <div class="logo"></div>
+            </div>
+            <div class="w-25 d-flex gap-3 align-items-center justify-content-center">
+                <i class="fa-solid fa-bell fs-4"></i>
+                <div class="dropdown">
+                    <i class="fa-solid fa-user fs-4"></i>
+                    <a class="text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">HELLO ADMIN!</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                        <li><a class="dropdown-item" href="#">Quản lí đơn hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Thoát</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex sidebar">
+            <div class="w-25 left">
+                <div class="header-name">
+                    <h1 class="fs-4 fw-bold text-danger">troandev</h1>
+                    <p class="fw-bold text-secon">Ví: 0</p>
+                </div>
+                <ul>
+                    <li>
+                        <a class="" href="./dashboard.html"><i class="fa-solid fa-user"></i>Tài khoản</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./thanhtoan.html"><i class="fa-solid fa-money-bill"></i>Thanh toán</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">------</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">------</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-75 right d-flex p-3 content-right">
+                <div class="w-100 bg-third p-3">
+                    <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>Yêu cầu thanh toán</h3>
+                    </div>
+                    <table class="table mt-3">
+                        <thead>
+                            <tr class="bg-primary text-white">
+                                <th scope="col">MÃ YÊU CẦU</th>
+                                <th scope="col">NGÀY YÊU CẦU</th>
+                                <th scope="col">TỔNG ĐƠN</th>
+                                <th scope="col">HÌNH THỨC VẬN CHUYỂN</th>
+                                <th scope="col">GHI CHÚ TỪ H2NCHIVI</th>
+                                <th scope="col">TRẠNG THÁI</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="dashboard.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>H2Nchivi Globa</title>
+    </head>
+    <body class="dashboard">
+        <div class="d-flex align-items-center justify-content-between bg-dark text-white">
+            <div class="py-2 w-25 d-flex align-items-center justify-content-between">
+                <div class="logo"></div>
+            </div>
+            <div class="w-25 d-flex gap-3 align-items-center justify-content-center">
+                <i class="fa-solid fa-bell fs-4"></i>
+                <div class="dropdown">
+                    <i class="fa-solid fa-user fs-4"></i>
+                    <a class="text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">HELLO ADMIN!</a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Thông tin tài khoản</a></li>
+                        <li><a class="dropdown-item" href="#">Quản lí đơn hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Thoát</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex sidebar">
+            <div class="w-25 left">
+                <div class="header-name">
+                    <h1 class="fs-4 fw-bold text-danger">troandev</h1>
+                    <p class="fw-bold text-secon">Ví: 0</p>
+                </div>
+                <ul>
+                    <li>
+                        <a class="active" href="./dashboard.html"><i class="fa-solid fa-user"></i>Tài khoản</a>
+                    </li>
+                    <li>
+                        <a class="" href="./thanhtoan.html"><i class="fa-solid fa-money-bill"></i>Thanh toán</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">------</a>
+                    </li>
+                    <li>
+                        <a class="" href="#">------</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-75 right d-flex p-3 content-right">
+                <div class="w-25 bg-third p-3">
+                    <h3 class="fw-bold">Điểm tích luỹ: 0</h3>
+                    <div class="my-3 py-3 border-top border-bottom d-flex justify-content-between">
+                        <h3 class="fw-bold">HẠNG:</h3>
+                        <h3 class="fw-bold text-secon">THÂN THIẾT</h3>
+                    </div>
+                    <h3 class="">Cần tích lũy thêm 100,000,000 để lên VIP 1</h3>
+                </div>
+                <div class="w-75 bg-white">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button
+                                class="nav-link active"
+                                id="nav-naptien-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-naptien"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-naptien"
+                                aria-selected="true"
+                            >
+                                NẠP TIỀN
+                            </button>
+                            <button class="nav-link" id="nav-ruttien-tab" data-bs-toggle="tab" data-bs-target="#nav-ruttien" type="button" role="tab" aria-controls="nav-ruttien" aria-selected="false">
+                                RÚT TIỀN
+                            </button>
+                            <button
+                                class="nav-link"
+                                id="nav-giaodich-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-giaodich"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-giaodich"
+                                aria-selected="false"
+                            >
+                                GIAO DỊCH
+                            </button>
+                            <button class="nav-link" id="nav-tichluy-tab" data-bs-toggle="tab" data-bs-target="#nav-tichluy" type="button" role="tab" aria-controls="nav-tichluy" aria-selected="false">
+                                TÍCH LUỸ
+                            </button>
+                            <button
+                                class="nav-link"
+                                id="nav-taikhoan-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-taikhoan"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-taikhoan"
+                                aria-selected="false"
+                            >
+                                TÀI KHOẢN
+                            </button>
+                            <button
+                                class="nav-link"
+                                id="nav-doimatkhau-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#nav-doimatkhau"
+                                type="button"
+                                role="tab"
+                                aria-controls="nav-doimatkhau"
+                                aria-selected="false"
+                            >
+                                ĐỔI MẬT KHẨU
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-naptien" role="tabpanel" aria-labelledby="nav-naptien-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3 d-flex flex-column justify-content-center align-items-center">
+                                <img width="350" src="./src/ck.png" alt="" />
+                                <div class="py-2 border-top">
+                                    <p class="text-primary">
+                                        Quý khách quét mã QR để chuyển khoản, tiền sẽ tự động được cộng vào ví (f5 lại trang để xem cập nhật). Nếu sau 5p số dư ví không được cập nhật, vui lòng liên hệ
+                                        CSKH để được hỗ trợ.
+                                    </p>
+                                </div>
+                                <div class="py-2 border-top">
+                                    <p class="text-danger fw-bold">LƯU Ý: nội dung chuyển khoản được hệ thống tạo sẵn, để tránh sai sót, quý khách vui lòng KHÔNG thay đổi nội dung chuyển khoản.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-ruttien" role="tabpanel" aria-labelledby="nav-ruttien-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3">
+                                <form action="">
+                                    <div class="d-flex gap-3 mb-3">
+                                        <div class="form-group">
+                                            <label for="">Tên ngân hàng</label>
+                                            <input type="text" class="form-control" placeholder="Tên ngân hàng" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Chủ tài khoản</label>
+                                            <input type="text" class="form-control" placeholder="Chủ tài khoản" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Số tài khoản</label>
+                                            <input type="text" class="form-control" placeholder="Số tài khoản" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="">Số tiền cần rút</label>
+                                        <input type="number" class="form-control" placeholder="0" />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="">Lý do</label>
+                                        <input type="text" class="form-control" placeholder="" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Nội dung</label>
+                                        <textarea type="text" class="form-control" placeholder="Nội dung" row="3"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-giaodich" role="tabpanel" aria-labelledby="nav-giaodich-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="bg-primary text-white">
+                                            <th scope="col">NGÀY GIỜ</th>
+                                            <th scope="col">NỘI DUNG</th>
+                                            <th scope="col">SỐ TIỀN</th>
+                                            <th scope="col">LOẠI GIAO DỊCH</th>
+                                            <th scope="col">SỐ DƯ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tichluy" role="tabpanel" aria-labelledby="nav-tichluy-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3">
+                                <table class="table">
+                                    <thead>
+                                        <tr class="bg-primary text-white">
+                                            <th scope="col">NGÀY GIAO DỊCH</th>
+                                            <th scope="col">MÃ ĐƠN HÀNG</th>
+                                            <th scope="col">SỐ TIỀN</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-taikhoan" role="tabpanel" aria-labelledby="nav-taikhoan-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3">
+                                <form action="">
+                                    <div class="form-group mb-3">
+                                        <label for="">Kho nhận hàng</label>
+                                        <select class="form-control form-control-md">
+                                            <option>Hà Nội</option>
+                                            <option>Hồ Chí Minh</option>
+                                        </select>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-3">
+                                        <div class="form-group">
+                                            <label for="">Họ của bạn</label>
+                                            <input type="text" class="form-control" placeholder="Họ của bạn" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">Tên của bạn</label>
+                                            <input type="text" class="form-control" placeholder="Tên của bạn" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-3">
+                                        <div class="form-group">
+                                            <label for="">Số điện thoại</label>
+                                            <input type="number" class="form-control" placeholder="Số điện thoại" />
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <label for="">Xác nhận mật khẩu</label>
+                                            <input type="email" class="form-control" placeholder="Email" />
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3 d-flex gap-2">
+                                        <select class="form-select form-select-md mb-3" id="city" aria-label=".form-select-md">
+                                            <option value="" selected>Chọn tỉnh thành</option>
+                                        </select>
+                                        <select class="form-select form-select-md mb-3" id="district" aria-label=".form-select-md">
+                                            <option value="" selected>Chọn quận huyện</option>
+                                        </select>
+                                        <select class="form-select form-select-md mb-3" id="ward" aria-label=".form-select-md">
+                                            <option value="" selected>Chọn phường xã</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Địa chỉ</label>
+                                        <input type="text" class="form-control" placeholder="Đống đa hà nội" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-doimatkhau" role="tabpanel" aria-labelledby="nav-doimatkhau-tab" tabindex="0">
+                            <div class="bg-white text-dark p-3">
+                                <div class="form-group">
+                                    <label for="">Mật khẩu đăng nhập</label>
+                                    <input type="password" class="form-control" placeholder="Mật khẩu đăng nhập" />
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label for="">Xác nhận mật khẩu</label>
+                                    <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+        <script src="./apirovine.js"></script>
+    </body>
+</html>
