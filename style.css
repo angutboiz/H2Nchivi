@@ -368,7 +368,10 @@ main .huongdan p {
 
 .login-form {
     height: 100vh;
-    color: #fff;
+}
+
+.login-form a {
+    color: #81c684;
 }
 
 .login .username {
@@ -403,7 +406,7 @@ footer .img-about {
 footer ul li i {
     margin-right: 10px;
 }
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1700px) {
     .p-25 {
         padding-left: 15%;
         padding-right: 15%;
